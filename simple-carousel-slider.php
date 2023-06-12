@@ -14,6 +14,8 @@ const SCS_VERSION = '1.0.0';
 require_once __DIR__ . '/inc/cpt.php';
 require_once __DIR__ . '/inc/slider.class.php';
 
+new SCSlider();
+
 /**
  * Enqueue scripts and styles.
  */
