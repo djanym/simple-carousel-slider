@@ -23,5 +23,6 @@ function scs_scripts() {
     wp_enqueue_script( 'bxslider', plugin_dir_url( __FILE__ ) . 'assets/js/jquery.bxslider.min.js', [ 'jquery' ], SCS_VERSION, true );
     wp_enqueue_style( 'bxslider', plugin_dir_url( __FILE__ ) . 'assets/css/jquery.bxslider.css', [], SCS_VERSION );
     wp_enqueue_script( 'scs-slider', plugin_dir_url( __FILE__ ) . 'assets/js/slider.js', [ 'jquery', 'bxslider' ], SCS_VERSION, true );
+    wp_enqueue_style( 'scs-slider', plugin_dir_url( __FILE__ ) . 'assets/css/slider.css', [], SCS_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'scs_scripts' );

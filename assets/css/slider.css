@@ -1,0 +1,209 @@
+.scs-slider-container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .scs-slider-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .scs-slider-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .scs-slider-container {
+    width: 1170px;
+  }
+}
+.scs-slider-container .scs-slider-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scs-slider-container .scs-slider-wrapper .bx-viewport {
+  left: 0;
+}
+.scs-slider-container .scs-slider-wrapper .bx-controls .bx-next, .scs-slider-container .scs-slider-wrapper .bx-controls .bx-prev {
+  height: 60px;
+  width: 60px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 30px);
+  margin: 0;
+  transition: box-shadow 0.2s ease-in;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
+}
+.scs-slider-container .scs-slider-wrapper .bx-controls .bx-next:hover, .scs-slider-container .scs-slider-wrapper .bx-controls .bx-prev:hover {
+  box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.08);
+}
+.scs-slider-container .scs-slider-wrapper .bx-controls .bx-prev {
+  left: -80px;
+  background: #fff url("../img/arrow-left.svg") no-repeat 50% 50%;
+}
+.scs-slider-container .scs-slider-wrapper .bx-controls .bx-next {
+  right: -80px;
+  background: #fff url("../img/arrow-right.svg") no-repeat 50% 50%;
+}
+
+.scs-slider .slide > a {
+  margin: 5px;
+  display: block;
+  transition: box-shadow 0.2s ease-in;
+}
+.scs-slider .slide .panel {
+  border-radius: 6px;
+  margin-bottom: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.scs-slider .slide .panel-body {
+  text-align: center;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scs-slider .slide .panel-footer {
+  background-color: #fff;
+  padding: 0 15px;
+  height: 60px;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: table;
+  width: 100%;
+}
+.scs-slider .slide .panel-footer .title {
+  padding-left: 10px;
+  color: #3e3e3e;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.scs-slider .slide .panel-footer .title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.scs-slider .slide .panel-footer .jobs {
+  text-align: right;
+  font-weight: bold;
+  color: #419dd4;
+  display: table-cell;
+  vertical-align: middle;
+}
+.scs-slider .slide .panel-image {
+  max-height: 114px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+@media all and (max-width: 1200px) {
+  .featured-companies__slider--prev {
+    left: 91px;
+  }
+}
+@media all and (max-width: 992px) {
+  .featured-companies__slider--prev {
+    left: 15px;
+  }
+}
+@media all and (max-width: 680px) {
+  .featured-companies__slider--prev {
+    left: 5px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .featured-companies__slider--next {
+    right: 98px;
+  }
+}
+@media all and (max-width: 992px) {
+  .featured-companies__slider--next {
+    right: 26px;
+  }
+}
+@media all and (max-width: 680px) {
+  .featured-companies__slider--next {
+    right: 15px;
+  }
+}
+.featured-companies__name {
+  font-size: 16px;
+}
+
+.featured-companies__name span {
+  width: 155px;
+}
+
+.featured-companies__jobs {
+  text-align: right;
+  font-weight: 500;
+  color: #419dd4;
+}
+
+@media all and (max-width: 992px) {
+  .featured-companies {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+}
+.featured-companies .bx-wrapper {
+  margin-bottom: 0;
+  left: -5px;
+}
+
+.featured-companies .bx-wrapper .bx-loading {
+  background: url("../img/bx_loader.gif") center center no-repeat #fff;
+}
+
+.featured-companies .bx-wrapper .bx-viewport {
+  box-shadow: none;
+  background: none;
+  left: 0 !important;
+  border: none;
+}
+
+.featured-companies .featured-company > a {
+  margin: 5px;
+  display: block;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.featured-companies .featured-company > a:hover {
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
+}
+
+.featured-companies .featured-company a:hover {
+  text-decoration: none;
+}
+
+.featured-companies__name, .featured-companies__jobs {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.featured-companies__name {
+  padding-left: 10px;
+  color: #3e3e3e;
+  text-align: left;
+}
+
+.featured-companies__name span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
