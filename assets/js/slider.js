@@ -1,5 +1,5 @@
 const scsSliderOptions = {
-    auto: false,
+    auto: true,
     infiniteLoop: true,
     minSlides: 1,
     maxSlides: 1,
